@@ -1,0 +1,14 @@
+<h1>Add a new profile</h1>
+<div><input placeholder="enter name" type="text" ng-model="name"/></div>
+<div><input placeholder="enter an age" type="text" ng-model="age"/></div>
+<div><input placeholder="enter a height" type="text" ng-model="height"/></div>
+<div><input placeholder="enter a gender" type="text" ng-model="gender"/></div>
+<div ng-repeat="x in $ctrl.addedProfile">
+    <ul>
+        <li> Name: {{x.name}}</li>
+        <li> Age: {{x.age}}</li>
+        <li> Height: {{x.height}}</li>
+        <li> Gender: {{x.gender}}</li>
+    </ul>
+</div>
+<div><button ng-click="$ctrl.addProfile()">Add</button></div>
